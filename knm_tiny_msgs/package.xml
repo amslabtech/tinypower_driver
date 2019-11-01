@@ -1,0 +1,29 @@
+<package>
+  <name>knm_tiny_msgs</name>
+  <version>0.1.0</version> <!--@2015/3/9-->
+  <description>knm_tiny_msgs for knm_tiny_power etc</description>
+
+  <maintainer email="ee13105@meiji.ac.jp">Tomohiro KONUMA</maintainer>
+  <author>amsl</author>
+
+  <license>BSD</license>
+
+  <url></url>
+
+  <buildtool_depend>catkin</buildtool_depend>
+
+  <build_depend>message_generation</build_depend>
+  <build_depend>std_msgs</build_depend>
+
+  <run_depend>message_runtime</run_depend>
+  <run_depend>std_msgs</run_depend>
+
+<!--
+  <depend package="std_msgs"/>
+  <depend package="nav_msgs"/>
+  <depend package="geometry_msgs"/>
+-->
+
+</package>
+
+

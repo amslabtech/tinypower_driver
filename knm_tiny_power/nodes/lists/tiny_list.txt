@@ -1,0 +1,9 @@
+#,This txt has nodes list when ceres's FitPC is boot.
+#,If you add new node,you write "pkg_name,executable_file_name,node_name" in last line
+#,"#,"is comment out command.
+#,If you use this command,you write this command at the beginning of a sentence
+
+
+knm_tiny_power,knm_tiny_power,knm_tiny_power
+knm_tiny_power,knm_tiny_joy,knm_tiny_joy
+joy,joy_node,joy_node
