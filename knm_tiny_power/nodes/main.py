@@ -83,6 +83,8 @@ if __name__ == '__main__':
 		tinypower.commMVV()
 
 		odom_data.header.stamp = rospy.Time.now()
+                odom_data.header.frame_id = "odom"
+                odom_data.child_frame_id = "base_link"
 		odom_data.pose.pose.position.x = tinypower.x
 		odom_data.pose.pose.position.y = tinypower.y
 		# odom_data.pose.pose.orientation.z = tinypower.theta
