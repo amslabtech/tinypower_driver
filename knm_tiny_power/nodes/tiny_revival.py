@@ -25,7 +25,7 @@ def tinyOdomCallback(data):
 def setActNodeList():
 	# act_node_file=open('/home/amsl/ros_catkin_ws/src/hardware/knm_tiny_power/nodes/lists/tiny_list.txt')
 	# act_node_file=open('/home/amsl/ros_catkin_ws/src/hardware/knm_tiny_power/nodes/lists/knm_tiny_list.txt')
-	act_node_file=open('/home/amsl/ros_catkin_ws/src/hardware/knm_tiny_power/nodes/lists/mcnk_tiny_list.txt')
+	act_node_file=open('/home/amsl/ros_catkin_ws/src/tinypower_driver/knm_tiny_power/nodes/lists/mcnk_tiny_list.txt')
 	act_node_list=act_node_file.readlines()
 	for line in act_node_list:
 		node_info=line.split('\n')
