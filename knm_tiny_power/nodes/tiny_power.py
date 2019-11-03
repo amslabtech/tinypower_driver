@@ -31,6 +31,8 @@ class TinyPower:
 
 	def commVCX(self, linear):
 		linear = str(round(linear, 2))
+                if abs(float(linear)) == 0.0:
+                    self.linear = 0.0
 		#print 'linear : ', linear
 		command = 'VCX'+linear+'\n\r'
 		#self.global_lock.acquire()
@@ -39,6 +41,8 @@ class TinyPower:
 
 	def commVCR(self, angular):
 		angular = str(round(angular, 2))
+                if abs(float(angular)) == 0.0:
+                    self.angular = 0.0
 		#print 'angular : ', angular
 		command = 'VCR'+angular+'\n\r'
 		#self.global_lock.acquire()
@@ -74,7 +78,7 @@ class TinyPower:
 		#		print 'oh'
 		#		line = self.ser.readline()
 		#		print line
-	
+
 	def calcOdom(self):
 		pre_x = self.x
 		pre_y = self.y
