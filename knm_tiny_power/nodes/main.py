@@ -55,7 +55,7 @@ def commandVelCallback(data):
 	#global_lock.acquire()
         print data
 	tinypower.commVCX(data.linear.x)
-	tinypower.commVCR(-data.angular.z)
+	tinypower.commVCR(data.angular.z)
 	#global_lock.release()
 	pass
 

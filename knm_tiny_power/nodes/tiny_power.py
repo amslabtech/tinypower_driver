@@ -74,7 +74,7 @@ class TinyPower:
 		#		print 'oh'
 		#		line = self.ser.readline()
 		#		print line
-	
+
 	def calcOdom(self):
 		pre_x = self.x
 		pre_y = self.y
@@ -111,7 +111,7 @@ class TinyPower:
 					data = data[1].split('\r')
 					data = data[0].split(',')
 					self.linear = float(data[0])
-					self.angular = -float(data[1])
+					self.angular = float(data[1])
 					self.calcOdom()
 					#print "%f, %f"%(self.x, self.y)
 					#print data
