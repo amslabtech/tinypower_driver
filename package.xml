@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<package format="3">
+  <name>tinypower_driver</name>
+  <version>0.0.0</version>
+  <description>The tinypower_driver package</description>
+
+  <maintainer email="amslab@meiji.ac.jp">amsl</maintainer>
+
+  <license>BSD</license>
+
+  <depend>roscpp</depend>
+  <depend>tf2</depend>
+  <depend>tf2_ros</depend>
+  <depend>tf2_geometry</depend>
+  <depend>nav_msgs</depend>
+  <depend>geometry_msgs</depend>
+  <buildtool_depend>catkin</buildtool_depend>
+
+
+  <!-- The export tag contains other, unspecified, tags -->
+  <export>
+    <!-- Other tools can request additional information be placed here -->
+
+  </export>
+</package>

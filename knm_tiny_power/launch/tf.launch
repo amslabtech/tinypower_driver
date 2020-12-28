@@ -1,7 +1,0 @@
-<launch>
-  <!-- <node pkg="tf" type="static_transform_publisher" name="link3_broadcaster" -->
-	<!--   args="0 0 1.300 &#45;1.570796 0 0 matching_base_link /velodyne 100" /> -->
-  <node pkg="tf" type="static_transform_publisher" name="base_match"
-	  args="0 0 0 0 0 0 base_link matching_base_link 100" />
-
-</launch>
