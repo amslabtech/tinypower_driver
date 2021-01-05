@@ -16,7 +16,7 @@ TinypowerDriver::TinypowerDriver(void)
     local_nh_.param<int>("buffer_size", buffer_size_, 4096);
     local_nh_.param<double>("reconnection_interval", reconnection_interval_, 1.0);
     local_nh_.param<double>("hz", hz_, 40.0);
-    local_nh_.param<int>("poll_timeout", poll_timeout_, 1000);
+    local_nh_.param<int>("poll_timeout", poll_timeout_, 5);
     local_nh_.param<std::string>("robot_frame_id", robot_frame_id_, "base_link");
     local_nh_.param<std::string>("odom_frame_id", odom_frame_id_, "odom");
     local_nh_.param<bool>("enable_tf", enable_tf_, false);
