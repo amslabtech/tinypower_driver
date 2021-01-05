@@ -26,6 +26,7 @@ TinypowerDriver::TinypowerDriver(void)
     tfb_ = std::make_shared<tf2_ros::TransformBroadcaster>();
 
     open_port(port_name_);
+    initialize_port();
 }
 
 TinypowerDriver::~TinypowerDriver(void)
