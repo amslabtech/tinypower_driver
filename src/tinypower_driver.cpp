@@ -26,13 +26,11 @@ TinypowerDriver::TinypowerDriver(void)
     tfb_ = std::make_shared<tf2_ros::TransformBroadcaster>();
 
     open_port(port_name_);
-    receiving_thread_ = std::make_shared<std::thread>(&TinypowerDriver::receive_data, this);
 }
 
 TinypowerDriver::~TinypowerDriver(void)
 {
     close_port();
-    receiving_thread_->join();
 }
 
 void TinypowerDriver::process(void)

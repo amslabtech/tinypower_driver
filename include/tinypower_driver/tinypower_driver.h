@@ -4,7 +4,6 @@
 #include <chrono>
 #include <mutex>
 #include <string>
-#include <thread>
 
 #include <errno.h>
 #include <fcntl.h>
@@ -64,7 +63,6 @@ private:
     bool enable_tf_;
     // file descriptor
     int fd_;
-    std::shared_ptr<std::thread> receiving_thread_;
     std::mutex mtx_;
     double velocity_;
     double yawrate_;
