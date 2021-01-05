@@ -116,7 +116,6 @@ void TinypowerDriver::send_velocity(float v, float omega)
     std::stringstream ss;
     ss << "VCX" << v << "\n\r" << "VCR" << omega << "\n\r";
     const std::string data = ss.str();
-    ROS_INFO_STREAM(data);
     if(write_data(data) <= 0){
         ROS_ERROR("Failed to send data");
     }
