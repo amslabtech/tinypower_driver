@@ -201,7 +201,9 @@ bool TinypowerDriver::request_data(
                     buffer.erase(0, pos);
                     is_begin_received = true;
                 }
-            }else{
+            }
+            // is_begin_received might be changed in the above if block
+            if(is_begin_received){
                 const int pos = buffer.find_first_of(end);
                 if(pos > 0){
                     buffer.erase(pos + 1, buffer.size() - (pos + 1));
