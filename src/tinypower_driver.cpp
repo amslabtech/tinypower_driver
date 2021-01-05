@@ -125,7 +125,7 @@ void TinypowerDriver::send_velocity(float v, float omega)
 bool TinypowerDriver::request_odom(void)
 {
     const std::string command = "MVV";
-    const std::string begin = std::to_string(command[1]);
+    const std::string begin = command.substr(0, 1);
     const std::string end = "\n";
     std::string data;
 
